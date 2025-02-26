@@ -52,10 +52,10 @@
           <div class="notif">
             <span class="text-light">Reservasi Anda</span>
             <hr class="m-0">
-            <span class="text-warning">{{ auth()->user()->nama }}</span>
+            <span class="text-info">{{ auth()->user()->nama }}</span>
           </div>
         </a>
-        <a href="/logoutuser" class="btn btn-warning rounded-0 shadow fw-bold px-4">LOGOUT</a>
+        <a href="/logoutuser" class="btn btn-primary rounded-0 shadow fw-bold px-4">LOGOUT</a>
       @elseif(Auth::guard('web')->guest())
       @auth('admin')
       <a href="/dashboard" class="btn btn-primary rounded-0 shadow fw-bold px-4 me-2">DASHBOARD</a>
